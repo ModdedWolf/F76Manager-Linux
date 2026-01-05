@@ -1,0 +1,59 @@
+{
+  "name": "fallout-76-manager-linux",
+  "version": "2.5.0",
+  "description": "Fallout 76 Manager for Linux (Bazzite)",
+  "main": "main.mjs",
+  "type": "module",
+  "author": "ModdedMc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ModdedWolf/F76Manager-Linux.git"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "electron-is-dev": "^2.0.0",
+    "lucide-static": "^0.321.0"
+  },
+  "devDependencies": {
+    "electron": "^28.2.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.filthymod.f76manager",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "ModdedWolf",
+        "repo": "F76Manager-Linux"
+      }
+    ],
+    "linux": {
+      "target": [
+        "zip",
+        "tar.gz"
+      ],
+      "category": "Game",
+      "icon": "www/assets/Icon-nobg.png"
+    },
+    "extraFiles": [
+      {
+        "from": "launch.sh",
+        "to": "launch.sh"
+      }
+    ],
+    "asar": true,
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.mjs",
+      "preload.js",
+      "launch.sh",
+      "managers/**/*",
+      "www/**/*"
+    ]
+  }
+}

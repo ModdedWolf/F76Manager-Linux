@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fallout 76 Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark-theme" oncontextmenu="return false">
+    <script>
+        // IPC Compatibility Shim for Linux
+        // Maps the safe 'f76_ipc' bridge back to 'chrome.webview' for frontend parity
+        if (window.f76_ipc) {
+            window.chrome = window.chrome || {};
+            window.chrome.webview = window.f76_ipc.webview;
+            console.log("[IPC] Linux bridge initialized.");
+        }
+    </script>
+    <div id="app">
+        <aside id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <img src="assets/Icon-nobg.png" alt="Vault Logo" class="logo">
+                    <span class="app-name">F76 Manager</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#dashboard" class="nav-item active" data-section="dashboard">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span class="nav-label">Dashboard</span>
+                </a>
+                <a href="#mods" class="nav-item" data-section="mods">
+                    <i data-lucide="package"></i>
+                    <span class="nav-label">Mods</span>
+                </a>
+                <a href="#tweaks" class="nav-item" data-section="tweaks">
+                    <i data-lucide="sliders-horizontal"></i>
+                    <span class="nav-label">Tweaks</span>
+                </a>
+                <a href="#pipboy" class="nav-item" data-section="pipboy">
+                    <i data-lucide="monitor"></i>
+                    <span class="nav-label">Pip-Boy</span>
+                </a>
+                <div class="nav-divider"></div>
+                <a href="#profiles" class="nav-item" data-section="profiles">
+                    <i data-lucide="users"></i>
+                    <span class="nav-label">Profiles</span>
+                </a>
+                <a href="#logs" class="nav-item" data-section="logs">
+                    <i data-lucide="terminal"></i>
+                    <span class="nav-label">Logs</span>
+                </a>
+                <a href="#settings" class="nav-item" data-section="settings">
+                    <i data-lucide="settings"></i>
+                    <span class="nav-label">Settings</span>
+                </a>
+                <a href="#update" class="nav-item" data-section="update">
+                    <i data-lucide="refresh-cw"></i>
+                    <span class="nav-label">Update</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-container">
+            <header class="top-bar">
+                <div class="top-bar-left">
+                    <div id="section-title" class="section-title">Dashboard</div>
+                </div>
+
+                <div class="top-bar-center">
+                    <div class="status-indicator">
+                        <span class="status-dot online"></span>
+                        <span class="status-label">Server: Online</span>
+                    </div>
+                </div>
+
+                <div class="top-bar-right">
+                    <div id="platform-toggle" class="platform-badge steam" style="cursor: pointer;">
+                        <i data-lucide="gamepad-2"></i>
+                        <span>Steam</span>
+                    </div>
+                    <div class="profile-selector">
+                        <select id="profile-dropdown">
+                            <option value="default">Default Profile</option>
+                            <option value="test">Testing</option>
+                            <option value="ultra">Ultra PC</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+
+            <div id="notification-container" class="notification-container"></div>
+
+            <div id="content-area" class="content-area">
+                <!-- Content injected here via JS -->
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

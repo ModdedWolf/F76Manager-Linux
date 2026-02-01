@@ -1,6 +1,6 @@
 {
-  "version": "2.6.3",
-  "url": "https://github.com/ModdedWolf/F76Manager-Linux/releases/download/v2.6.3/F76ManagerApp",
-  "notes": "-Testing Update Feature",
-  "exeHash": ""
+    "url":  "https://github.com/ModdedWolf/F76Manager-Linux/releases/download/v2.6.3/F76Manager-Linux-v2.6.3.tar.gz",
+    "exeHash":  "",
+    "version":  "2.6.3",
+    "notes":  "-Testing Update Feature (Fixed URL)"
 }

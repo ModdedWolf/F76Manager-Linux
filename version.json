@@ -1,6 +1,6 @@
 {
-  "version": "2.6.5",
-  "url": "https://github.com/ModdedWolf/F76Manager-Linux/releases/download/v2.6.5/F76Manager-Linux-v2.6.5.tar.gz",
-  "notes": "-\n",
+  "version": "2.6.9",
+  "url": "https://github.com/ModdedWolf/F76Manager-Linux/releases/download/v2.6.9/F76Manager-Linux-v2.6.9.tar.gz",
+  "notes": "-Arch Linux supported (only tested on EndeavourOS)\n\n-Fixed text using strings ",
   "exeHash": ""
 }

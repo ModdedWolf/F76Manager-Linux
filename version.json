@@ -1,6 +1,6 @@
 {
-  "version": "2.6.9",
-  "url": "https://github.com/ModdedWolf/F76Manager-Linux/releases/download/v2.6.9/F76Manager-Linux-v2.6.9.tar.gz",
-  "notes": "-Arch Linux supported (only tested on EndeavourOS)\n\n-Fixed text using strings ",
+  "version": "2.7.0",
+  "url": "https://github.com/ModdedWolf/F76Manager-Linux/releases/download/v2.7.0/F76Manager-Linux-v2.7.0.tar.gz",
+  "notes": "-Fixed all the constant refreshes in every tab when the user would apply, save an option or check for update\n\n-Redesign the Setting tab \n\n-Fixed a few Languages\n\n-Changed the mod list image that takes users to Nexus \n\n-Fixed raw strings showing in the create new bundle area \n\n-Fixed raw strings showing when deploying 0 mods \n",
   "exeHash": ""
 }

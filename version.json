@@ -1,6 +1,6 @@
 {
-  "version": "2.7.1",
-  "url": "https://github.com/ModdedWolf/F76Manager-Linux/releases/download/v2.7.1/F76Manager-Linux-v2.7.1.tar.gz",
-  "notes": "-Fixed Update looping ",
+  "version": "2.7.2",
+  "url": "https://github.com/ModdedWolf/F76Manager-Linux/releases/download/v2.7.2/F76Manager-Linux-v2.7.2.tar.gz",
+  "notes": "-Added CachyOS Support ",
   "exeHash": ""
 }

@@ -1,6 +1,6 @@
 {
-  "version": "2.7.2",
-  "url": "https://github.com/ModdedWolf/F76Manager-Linux/releases/download/v2.7.2/F76Manager-Linux-v2.7.2.tar.gz",
-  "notes": "-Added CachyOS Support ",
+  "version": "2.7.3",
+  "url": "https://github.com/ModdedWolf/F76Manager-Linux/releases/download/v2.7.3/F76Manager-Linux-v2.7.3.tar.gz",
+  "notes": "BETA BUILD\n\n-Rebuilt to be close to a 1 to 1 like the Windows Version\n\n-Needs testing for CachyOS, and EndeavourOS",
   "exeHash": ""
 }
